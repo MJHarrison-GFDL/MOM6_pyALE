@@ -1,0 +1,3 @@
+[submodule "pkg/MOM6"]
+	path = pkg/MOM6
+	url = https://github.com/NOAA-GFDL/MOM6.git
