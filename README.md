@@ -2,12 +2,16 @@ Instructions
 ============
 
 
-! Compiles MOM6 remapping library and python API
+# Compiling MOM6 remapping library and python API
 
+```
 git submodule init
 git submodule update
 make
+```
 
-! Simple test
+# Testing the install
 
+```
 python test.py
+```
