@@ -25,6 +25,9 @@ print('PPM_H4 remapping error (%)=',(np.sum(u1*dz1)-np.sum(u0*dz0))/np.sum(u0*dz
 u_out=remap.remap_mod.remap(u_in,z_in,z_out,method='PQM_IH4IH3',bndy_extrapolation=False)
 u1=u_out[0,0,:]
 print('PQM_IH4IH3 remapping error (%)=',(np.sum(u1*dz1)-np.sum(u0*dz0))/np.sum(u0*dz0))
+u_out=remap.remap_mod.remap(u_in,z_in,z_out,method='PQM_IH6IH5',bndy_extrapolation=False)
+u1=u_out[0,0,:]
+print('PQM_IH6IH5 remapping error (%)=',(np.sum(u1*dz1)-np.sum(u0*dz0))/np.sum(u0*dz0))
 #plt.plot(u0,0.5*(z0[:-1]+z0[1:]))
 #plt.plot(u1,0.5*(z1[:-1]+z1[1:]))
 #plt.show()
