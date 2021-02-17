@@ -1,4 +1,4 @@
-module pyale_mod
+module remap_mod
 
   use MOM_remapping, only : remapping_CS
   use MOM_remapping, only : initialize_remapping
@@ -75,4 +75,4 @@ contains
 
 
 
-end module pyale_mod
+end module remap_mod

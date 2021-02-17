@@ -21,7 +21,7 @@ SRCS =  MOM_io.F90 MOM_error_handler.F90 pkg/MOM6/src/ALE/polynomial_functions.F
 
 
 OBJECTS = $(SRCS:.F90=.o)
-TARGET = libALE.a
+TARGET = libRemap.a
 
 
 $(TARGET): $(OBJECTS)

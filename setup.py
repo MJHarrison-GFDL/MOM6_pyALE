@@ -5,16 +5,16 @@ from numpy.distutils.core import setup,Extension
 doclines = __doc__.split("\n")
 
 
-vertmap_ALE = Extension(name = 'vertmap_ALE',
+remap  = Extension(name = 'remap',
                 include_dirs = ['.mod'],
                 library_dirs = ['.'],
-                libraries = ['ALE'],
-                sources = ['pyale.f90'])
+                libraries = ['Remap'],
+                sources = ['remap.f90'])
 
 
 if __name__ == '__main__':
     from numpy.distutils.core import setup
-    setup(name = "pyALE",
+    setup(name = "pyRemapping",
           version = '1.2.4',
           description = doclines[0],
           long_description = "\n".join(doclines[2:]),
@@ -23,5 +23,5 @@ if __name__ == '__main__':
           url = "none",
           license = 'CCL',
           platforms = ["any"],
-          ext_modules = [vertmap_ALE],
+          ext_modules = [remap],
           )
