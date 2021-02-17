@@ -9,19 +9,6 @@ module remap_mod
 
   private
 
-! The following are private parameter constants
-integer, parameter  :: REMAPPING_PCM        = 0 !< O(h^1) remapping scheme
-integer, parameter  :: REMAPPING_PLM        = 1 !< O(h^2) remapping scheme
-integer, parameter  :: REMAPPING_PPM_H4     = 2 !< O(h^3) remapping scheme
-integer, parameter  :: REMAPPING_PPM_IH4    = 3 !< O(h^3) remapping scheme
-integer, parameter  :: REMAPPING_PQM_IH4IH3 = 4 !< O(h^4) remapping scheme
-integer, parameter  :: REMAPPING_PQM_IH6IH5 = 5 !< O(h^5) remapping scheme
-
-integer, parameter  :: INTEGRATION_PCM = 0  !< Piecewise Constant Method
-integer, parameter  :: INTEGRATION_PLM = 1  !< Piecewise Linear Method
-integer, parameter  :: INTEGRATION_PPM = 3  !< Piecewise Parabolic Method
-integer, parameter  :: INTEGRATION_PQM = 5  !< Piecewise Quartic Method
-
   public :: remap
 
 contains
